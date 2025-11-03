@@ -129,7 +129,7 @@ select
     menu_name,
     orderable_status,
     field(orderable_status, 'Y', 'N')
-from
+
    tbl_menu
 order by
     field(orderable_status, 'Y', 'N') asc;
