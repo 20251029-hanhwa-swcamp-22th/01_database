@@ -34,3 +34,44 @@ select
     *
 from
     tbl_menu;
+
+-- from 없이 단독 select 사용
+-- == 선택할 테이블이 없다!
+-- == 어떠한 테이블도 조회하려는 데이터를 가지고 있지 않다!
+
+/*2*/
+select 7 + 3;
+select 7 - 3;
+select 7 * 3;
+select 7 / 3;
+select 7 % 3; -- 나머지(modulo,mod)
+
+select 7 + 3,7-3; -- 여러 컬럼(column,열,세로줄) 조회도 가능
+
+-- 내장 함수 이용
+select now(); -- 현재 시간
+select concat('홍','길동'); -- () 내 문자열을 합쳐서 결과 출력
+
+-- 컬럼 별칭 사용
+select now() as 현재시간;
+select concat('홍','길동') as 이름;
+select concat('홍','길동') as 'full name'; -- 띄어쓰기도 문자열
+select concat('홍','길동') as 'full name'; -- 띄어쓰기도 문자열
+
+-- menudb 데이터베이스 내 모든 테이블 조회해보기
+
+select
+    *
+from
+    tbl_category;
+
+select
+    category_code,category_name
+from
+    tbl_category;
+
+select * from tbl_order;
+select * from tbl_order_menu;
+select * from tbl_payment;
+select * from tbl_payment_order;
+
