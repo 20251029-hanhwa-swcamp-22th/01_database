@@ -36,9 +36,3 @@ select now() as 현재시간; -- 현재 시간
 # select concat('/홍',' ','길동') as 'full name';-- 내 문자열을 합쳐서 결과 출력
 select concat('/홍',' ','길동') as 'full name';
                                              -- 내 문자열을 합쳐서 결과 출력
-
-select tbl_order,
-tbl_order_menu,
-tbl_payment,
-tbl_payment_order
-from tbl_menu''
