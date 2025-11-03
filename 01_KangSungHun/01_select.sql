@@ -44,4 +44,17 @@ SELECT 7 + 3, 7 - 3; -- 여러 컬럼 조회도 가능
 
 -- 내장 함수 이용
 SELECT NOW();
-SELECT CONCAT('홍','길동');
+SELECT CONCAT('홍','길동'); -- () 내 문자열을 합쳐서 결과 출력
+
+-- 컬럼 별칭 사용
+SELECT NOW() AS 현재시간;
+SELECT CONCAT('홍','길동') AS 이름;
+SELECT CONCAT('홍','길동') AS 'full name';
+SELECT CONCAT('홍',' ','길동') AS 'full name'; -- 띄어쓰기도 문자열
+
+-- menudb 데이터베이스 내 모든 테이블 조회해보기
+
+SELECT
+    *
+FROM
+    tbl_category;
