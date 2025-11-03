@@ -58,6 +58,8 @@ SELECT category_code, category_name
 FROM tbl_category;
 
 SELECT * FROM tbl_order;
-SELECT * FROM tbl_menu;
 SELECT * FROM tbl_category;
+SELECT * FROM tbl_menu;
+SELECT * FROM tbl_order_menu;
 SELECT * FROM tbl_payment;
+SELECT * FROM tbl_payment_order;
