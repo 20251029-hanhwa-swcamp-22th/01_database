@@ -15,10 +15,8 @@ FROM
 
 
 -- 2번. 별칭(AS)을 사용하여 현재 날짜와 시간을 '조회시각'이라는 이름으로 출력하세요.
-SELECT NOW() AS
-FROM
-    tbl_menu
-WHERE
+SELECT
+    NOW() AS '조회시각';
 
 
 -- 3번. tbl_category 테이블의 모든 컬럼을 조회하세요.
@@ -37,22 +35,27 @@ SELECT
     menu_price
 FROM
     tbl_menu
-ORDER BY menu_price ASC;
+ORDER BY
+    menu_price ASC;
+
 -- 5번. tbl_menu 테이블에서 카테고리 코드 오름차순, 같은 카테고리 내에서는 가격 내림차순으로 정렬하여 모든 컬럼을 조회하세요.
+
 SELECT
     *
 FROM
     tbl_menu
-ORDER BY category_code ASC
-
+ORDER BY
+    category_code ASC,
+    menu_price DESC;
 
 
 -- 6번. tbl_menu 테이블에서 주문가능상태(orderable_status) 기준으로 정렬하되, 'Y'가 먼저 나오도록 조회하세요.
 SELECT
-    orderable_status
+    *
 FROM
     tbl_menu
-ORDER BY orderable_status = 'Y' DESC;
+ORDER BY
+    orderable_status DESC;
 
 -- ========================================
 -- WHERE 절 - 비교 연산자
@@ -162,7 +165,7 @@ SELECT
 FROM
     tbl_menu
 WHERE
-    menu_price NOT BETWEEN 10000 AND 20000
+    menu_price NOT BETWEEN 10000 AND 20000;
 
 -- ========================================
 -- WHERE 절 - LIKE
@@ -206,7 +209,7 @@ SELECT
 FROM
     tbl_menu
 WHERE
-    menu_name NOT LIKE '김치';
+    menu_name NOT LIKE '%김치%';
 
 -- ========================================
 -- WHERE 절 - IN
@@ -224,7 +227,7 @@ WHERE
 SELECT
     category_code
 FROM
-    tbl_menu
+    tbl_category
 WHERE
     category_code NOT IN (1,2,3);
 
@@ -268,17 +271,50 @@ ORDER BY
 
 -- 27번. tbl_menu 테이블에서 메뉴명에 '아'가 포함되거나 가격이 5,000원 이하인 메뉴를 메뉴명 오름차순으로 조회하세요.
 SELECT
-    menu_name
+    menu_name,
+    menu_price
 FROM
     tbl_menu
 WHERE
-    menu_name
+    menu_name LIKE '%아%'
+    OR menu_price <= 5000
+ORDER BY
+    menu_name ASC;
+
+
 
 -- 28번. tbl_menu 테이블에서 카테고리 코드가 8~12번 사이이고, 메뉴명에 '빵'이 포함된 메뉴의 메뉴명과 가격을 조회하세요.
-
+SELECT
+    menu_name,
+    menu_price,
+    category_code
+FROM
+    tbl_menu
+WHERE
+    category_code BETWEEN 8 AND 12
+AND
+    menu_name LIKE '%빵%';
 
 -- 29번. tbl_category 테이블에서 상위 카테고리 코드가 1번 또는 2번인 카테고리의 카테고리명과 상위 카테고리 코드를 조회하세요.
-
+SELECT
+    category_name,
+    ref_category_code
+FROM
+    tbl_category
+WHERE
+    ref_category_code IN (1, 2);
 
 -- 30번. tbl_menu 테이블에서 주문 불가능하거나(orderable_status = 'N'), 가격이 10,000원 미만인 메뉴 중 메뉴명이 '빵', '떡', '찜' 중 하나로 끝나는 메뉴를 조회하세요. (여러 조건 조합)
-
+SELECT
+    menu_name,
+    menu_price,
+    orderable_status
+FROM
+    tbl_menu
+WHERE
+    (orderable_status = 'N' OR menu_price < 10000)
+    AND (
+        menu_name LIKE '%빵'
+        OR menu_name LIKE '%떡'
+        OR menu_name LIKE '%찜'
+    );

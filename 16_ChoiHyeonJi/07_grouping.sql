@@ -188,9 +188,8 @@ ORDER BY
     평균금액 ASC
 LIMIT 0,3;
 
-
-
 /*
+
  1. FROM 절 JOIN 시키면 큰 테이블 만들어짐
  큰 표 안에서 GROUP BY code, name 그룹화
 
