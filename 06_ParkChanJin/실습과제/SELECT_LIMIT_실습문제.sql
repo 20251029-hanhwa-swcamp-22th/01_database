@@ -13,12 +13,27 @@ FROM
     employee;
 
 -- 3. 201번 사번의 사번 및 이름 조회
-
+SELECT
+    EMP_ID,
+    EMP_NAME
+FROM
+    employee
+WHERE
+    EMP_ID = 201;
 
 -- 4. 부서 코드가 'D9'인 사원의 이름과 부서코드 조회
+SELECT
+    DEPT_CODE,
+    EMP_NAME
+FROM
+    employee
+WHERE
+    DEPT_CODE = 'D9';
 
 
 -- 5. 직급 코드가 'J1'인 사원 조회
+SELECT
+FROM
 
 
 -- 6. 급여가 300만원 이상(>=)인 사원의 사번, 이름, 급여를 조회
