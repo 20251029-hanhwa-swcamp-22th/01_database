@@ -93,5 +93,3 @@ FROM employee
 ORDER BY EMP_NAME ASC
 LIMIT 0, 10;
 
-
-
