@@ -5,7 +5,14 @@
     <file url="file://$PROJECT_DIR$/03_sinwooKim/01_select.sql" value="c52ec3a0-8e32-4cbc-9962-4a8d4b9c92e2" />
     <file url="file://$PROJECT_DIR$/03_sinwooKim/02_order_by.sql" value="c52ec3a0-8e32-4cbc-9962-4a8d4b9c92e2" />
     <file url="file://$PROJECT_DIR$/03_sinwooKim/03_where.sql" value="c52ec3a0-8e32-4cbc-9962-4a8d4b9c92e2" />
+    <file url="file://$PROJECT_DIR$/03_sinwooKim/04_distinct.sql" value="c52ec3a0-8e32-4cbc-9962-4a8d4b9c92e2" />
+    <file url="file://$PROJECT_DIR$/03_sinwooKim/05_limit.sql" value="c52ec3a0-8e32-4cbc-9962-4a8d4b9c92e2" />
+    <file url="file://$PROJECT_DIR$/03_sinwooKim/06_join.sql" value="c52ec3a0-8e32-4cbc-9962-4a8d4b9c92e2" />
+    <file url="file://$PROJECT_DIR$/03_sinwooKim/07_grouping.sql" value="c52ec3a0-8e32-4cbc-9962-4a8d4b9c92e2" />
+    <file url="file://$PROJECT_DIR$/03_sinwooKim/08_subquery.sql" value="c52ec3a0-8e32-4cbc-9962-4a8d4b9c92e2" />
     <file url="file://$PROJECT_DIR$/03_sinwooKim/db_script.sql" value="c52ec3a0-8e32-4cbc-9962-4a8d4b9c92e2" />
+    <file url="file://$PROJECT_DIR$/03_sinwooKim/실습과제/SELECT~LIMIT_실습문제.sql" value="c286278c-df1b-460c-8193-93d1f2550124" />
     <file url="file://$PROJECT_DIR$/03_sinwooKim/실습과제/SELECT~WHERE_실습문제.sql" value="c52ec3a0-8e32-4cbc-9962-4a8d4b9c92e2" />
+    <file url="file://$PROJECT_DIR$/03_sinwooKim/실습과제/employee.sql" value="c286278c-df1b-460c-8193-93d1f2550124" />
   </component>
 </project>
