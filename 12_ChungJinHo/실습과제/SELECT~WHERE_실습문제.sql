@@ -264,8 +264,12 @@ select t.menu_name name
      , t.menu_price price
      , t.orderable_status status
   from tbl_menu t
- where (t.orderable_status = 'N' OR t.menu_price < 10000)
-   and (t.menu_name LIKE '%빵'
-     or t.menu_name LIKE '%떡'
-     or t.menu_name LIKE '%찜');
+ where t.orderable_status = 'N'
+    or (
+        t.menu_price < 10000
+        and (
+             t.menu_name LIKE '%빵'
+          or t.menu_name LIKE '%떡'
+          or t.menu_name LIKE '%찜'));
+
 
