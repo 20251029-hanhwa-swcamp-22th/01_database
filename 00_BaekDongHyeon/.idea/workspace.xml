@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2db303e-ec83-45fc-bdb0-89502c29420c" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/실습과제/SELECT~WHERE_실습문제.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/1e9a8885-b582-4d73-bd73-44705ab46b7c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/1e9a8885-b582-4d73-bd73-44705ab46b7c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/f33592f9-7329-4275-b5b1-41621a52b14c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/f33592f9-7329-4275-b5b1-41621a52b14c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/f33592f9-7329-4275-b5b1-41621a52b14c/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/f33592f9-7329-4275-b5b1-41621a52b14c/storage_v2/_src_/schema/mysql.osA4Bg.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/data_source_mapping.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/20cb81fa-b1f3-48fd-96ce-df082a8dac57.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/20cb81fa-b1f3-48fd-96ce-df082a8dac57.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1252551a-05a3-4580-887b-5b884f887afd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1252551a-05a3-4580-887b-5b884f887afd.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_where.sql" beforeDir="false" afterPath="$PROJECT_DIR$/03_where.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
