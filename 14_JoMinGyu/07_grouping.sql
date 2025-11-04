@@ -69,7 +69,7 @@ select
 from
     tbl_menu
 group by menu_price, category_code
-with rollup
+with rollup;
 #order by menu_price, category_code;
 
 # 종합문제 - SQL 해석하기
