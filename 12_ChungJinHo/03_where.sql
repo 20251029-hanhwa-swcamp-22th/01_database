@@ -133,3 +133,98 @@ select a.*
        or a.menu_price = '9000'
        )
    and a.menu_code > '10';
+
+-- between a and b : a 이상 b 이하 범위 지정
+select a.*
+  from tbl_menu a
+ where -- a.menu_price >= '10000' and a.menu_price <= '25000'
+       -- a.menu_price between '10000' and '25000'
+       a.menu_price < '10000' or a.menu_price > '25000'
+order by a.menu_price;
+/* LIKE 연산자
+   - 와일드카드를 이용해 문자열 패턴이 일치하면 조회
+   - % : 포함
+   - _ : 글자 개수
+*/
+
+-- %문자열 : 해당 문자열로 끝남
+select a.menu_name
+  from tbl_menu a
+ where a.menu_name like '%아메리카노';
+
+-- 문자열% : 해당 문자열로 시작
+select a.menu_name
+  from tbl_menu a
+ where a.menu_name like '죽%';
+
+-- %문자열% : 해당 문자열을 포함
+select a.menu_name
+  from tbl_menu a
+ where a.menu_name like '%마늘%';
+
+-- _ : 글자 개수
+select a.menu_name
+  from tbl_menu a
+ where a.menu_name like '_____'; -- 5글자 메뉴명만 조회
+
+ -- 마늘 앞에 반드시 1글자, 뒤에는 관계없음
+select a.menu_name
+  from tbl_menu a
+ where a.menu_name like '_마늘%';
+
+-- NOT LIKE : 문자열 패턴이 일치하지 않는 데이터만 조회
+select a.menu_name
+  from tbl_menu a
+ where a.menu_name not like '_마늘%';
+
+-- ESCAPE를 이용하여 와일드카드로서 사용되지 않게
+select a.*
+  from tbl_temp a
+ where a.temp_email like '___#_' escape '#';
+
+-- \(백슬래쉬) escape 문자
+select a.*
+  from tbl_temp a
+ where a.temp_email like '___\_';
+
+/* in / not in ( , ,  )
+   - 찾는 값이 괄호 한에 있으면/없으면 결과 반환
+   - or 연산을 여러 번 작성하는 것과 동치
+*/
+select a.*
+  from tbl_menu a
+ where a.category_code = '4'
+    or a.category_code = '5'
+    or a.category_code = '6'
+    or a.category_code = '10'
+order by a.category_code;
+
+select a.*
+  from tbl_menu a
+ where a.category_code in ('4','5','6','10')
+order by a.category_code;
+
+select a.*
+  from tbl_menu a
+ where a.category_code not in ('4','5','6','10')
+order by a.category_code;
+
+/* null 관련 연산
+   - null == 빈칸 (값x)
+   --> 비교 연산이 불가능하다
+*/
+select a.*
+  from tbl_category a
+ where a.ref_category_code = null; -- 잘못된 비교연산
+
+-- is null : 해딩 컬럼의 값이 null(빈칸)이면 true -> 결과 포함
+select a.*
+  from tbl_category a
+ where a.ref_category_code is null
+
+-- is not null : 해딩 컬럼의 값이 null(빈칸)이 아니면 true -> 결과 포함
+select a.*
+  from tbl_category a
+ where a.ref_category_code is not null
+
+
