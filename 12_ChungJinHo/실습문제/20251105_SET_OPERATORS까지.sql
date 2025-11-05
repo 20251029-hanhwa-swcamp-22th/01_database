@@ -135,8 +135,9 @@ select d.DEPT_TITLE `부서명`
   from employee e
   join department d
     on e.DEPT_CODE = d.DEPT_ID
- group by e.DEPT_CODE
+ group by d.DEPT_TITLE
  order by `평균 급여` desc;
+
 
 -- 10. 직원 중 보너스를 받는 직원들의 연봉 총합이 1억 원을
 -- 초과하는 부서의 부서명과 연봉 총합을 조회하시오. (1행)
