@@ -147,3 +147,6 @@ UNION
 SELECT '사원', SUM(e.salary)
 FROM EMPLOYEE e
 WHERE e.JOB_CODE = 'J7';
+
+
+
