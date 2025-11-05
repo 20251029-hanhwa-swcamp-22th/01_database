@@ -1,3 +1,4 @@
+
 -- 테이블 삭제
 DROP TABLE IF EXISTS tbl_payment_order CASCADE;
 DROP TABLE IF EXISTS tbl_payment CASCADE;
@@ -63,7 +64,8 @@ CREATE TABLE IF NOT EXISTS tbl_payment_order
     payment_code    INT NOT NULL COMMENT '결제코드',
     PRIMARY KEY (payment_code, order_code),
     CONSTRAINT fk_payment_order_order_code FOREIGN KEY (order_code) REFERENCES tbl_order (order_code),
-    CONSTRAINT fk_payment_order_payment_code FOREIGN KEY (order_code) REFERENCES tbl_payment (payment_code)
+    CONSTRAINT fk
+_payment_order_payment_code FOREIGN KEY (order_code) REFERENCES tbl_payment (payment_code)
 ) ENGINE=INNODB COMMENT '결제별주문';
 
 -- 데이터 삽입
@@ -107,20 +109,5 @@ INSERT INTO tbl_menu VALUES (null, '까나리코코넛쥬스', 9000, 9, 'Y');
 INSERT INTO tbl_menu VALUES (null, '마라깐쇼한라봉', 22000, 5, 'N');
 
 INSERT INTO tbl_menu VALUES (null, '돌미나리백설기', 5000, 11, 'Y');
-
-COMMIT;
-
-CREATE TABLE IF NOT EXISTS tbl_temp
-(
-    temp_code    INT AUTO_INCREMENT COMMENT '임시코드',
-    temp_email    VARCHAR(30) NOT NULL COMMENT '이메일',
-    PRIMARY KEY (temp_code)
-) ENGINE=INNODB COMMENT '임시테이블';
-
-INSERT INTO tbl_temp VALUES(1, 'sun_di@greedy.com');
-INSERT INTO tbl_temp VALUES(2, 'song_jk@greedy.com');
-INSERT INTO tbl_temp VALUES(3, 'no_oc@greedy.com');
-INSERT INTO tbl_temp VALUES(4, 'song_eh@greedy.com');
-INSERT INTO tbl_temp VALUES(5, 'yoo_js@greedy.com');
 
 COMMIT;
