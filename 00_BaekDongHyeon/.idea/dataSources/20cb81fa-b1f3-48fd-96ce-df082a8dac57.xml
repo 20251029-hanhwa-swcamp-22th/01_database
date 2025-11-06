@@ -1351,6 +1351,7 @@
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
+<<<<<<< HEAD
     <table id="559" parent="555" name="tb5">
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
@@ -1362,52 +1363,80 @@
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
     <table id="561" parent="555" name="tbl_category">
+=======
+    <table id="559" parent="555" name="tbl_category">
+>>>>>>> main
       <Comment>카테고리</Comment>
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
+<<<<<<< HEAD
     <table id="562" parent="555" name="tbl_country">
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
     <table id="563" parent="555" name="tbl_menu">
+=======
+    <table id="560" parent="555" name="tbl_menu">
+>>>>>>> main
       <Comment>메뉴</Comment>
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
+<<<<<<< HEAD
     <table id="564" parent="555" name="tbl_order">
+=======
+    <table id="561" parent="555" name="tbl_order">
+>>>>>>> main
       <Comment>주문</Comment>
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
+<<<<<<< HEAD
     <table id="565" parent="555" name="tbl_order_menu">
+=======
+    <table id="562" parent="555" name="tbl_order_menu">
+>>>>>>> main
       <Comment>주문별메뉴</Comment>
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
+<<<<<<< HEAD
     <table id="566" parent="555" name="tbl_payment">
+=======
+    <table id="563" parent="555" name="tbl_payment">
+>>>>>>> main
       <Comment>결제</Comment>
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
+<<<<<<< HEAD
     <table id="567" parent="555" name="tbl_payment_order">
+=======
+    <table id="564" parent="555" name="tbl_payment_order">
+>>>>>>> main
       <Comment>결제별주문</Comment>
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
+<<<<<<< HEAD
     <table id="568" parent="555" name="tbl_temp">
+=======
+    <table id="565" parent="555" name="tbl_temp">
+>>>>>>> main
       <Comment>임시테이블</Comment>
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_uca1400_ai_ci</CollationName>
     </table>
+<<<<<<< HEAD
     <table id="569" parent="555" name="user_check">
       <DetailsLevel>3</DetailsLevel>
       <Engine>InnoDB</Engine>
@@ -1443,10 +1472,18 @@
       <Predicate>`col1` in (&apos;Y&apos;,&apos;N&apos;)</Predicate>
     </check>
     <column id="576" parent="557" name="pk">
+=======
+    <check id="566" parent="557" name="CONSTRAINT_1">
+      <NameSurrogate>1</NameSurrogate>
+      <Predicate>`col1` in (&apos;Y&apos;,&apos;N&apos;)</Predicate>
+    </check>
+    <column id="567" parent="557" name="pk">
+>>>>>>> main
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="577" parent="557" name="fk">
       <Position>2</Position>
       <StoredType>int(11)|0s</StoredType>
@@ -1456,30 +1493,58 @@
       <StoredType>varchar(255)|0s</StoredType>
     </column>
     <index id="579" parent="557" name="PRIMARY">
+=======
+    <column id="568" parent="557" name="fk">
+      <Position>2</Position>
+      <StoredType>int(11)|0s</StoredType>
+    </column>
+    <column id="569" parent="557" name="col1">
+      <Position>3</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <index id="570" parent="557" name="PRIMARY">
+>>>>>>> main
       <ColNames>pk</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
+<<<<<<< HEAD
     <key id="580" parent="557" name="PRIMARY">
+=======
+    <key id="571" parent="557" name="PRIMARY">
+>>>>>>> main
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
+<<<<<<< HEAD
     <check id="581" parent="558" name="CONSTRAINT_1">
       <NameSurrogate>1</NameSurrogate>
       <Predicate>`col1` in (&apos;Y&apos;,&apos;N&apos;)</Predicate>
     </check>
     <column id="582" parent="558" name="pk">
+=======
+    <check id="572" parent="558" name="CONSTRAINT_1">
+      <NameSurrogate>1</NameSurrogate>
+      <Predicate>`col1` in (&apos;Y&apos;,&apos;N&apos;)</Predicate>
+    </check>
+    <column id="573" parent="558" name="pk">
+>>>>>>> main
       <AutoIncrement>15</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="583" parent="558" name="change_fk">
+=======
+    <column id="574" parent="558" name="change_fk">
+>>>>>>> main
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>decimal(10)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="584" parent="558" name="col1">
       <Position>3</Position>
       <StoredType>varchar(255)|0s</StoredType>
@@ -1499,15 +1564,27 @@
       <StoredType>char(11)|0s</StoredType>
     </column>
     <index id="588" parent="558" name="PRIMARY">
+=======
+    <column id="575" parent="558" name="col1">
+      <Position>3</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <index id="576" parent="558" name="PRIMARY">
+>>>>>>> main
       <ColNames>pk</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
+<<<<<<< HEAD
     <key id="589" parent="558" name="PRIMARY">
+=======
+    <key id="577" parent="558" name="PRIMARY">
+>>>>>>> main
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
+<<<<<<< HEAD
     <check id="590" parent="559" name="CONSTRAINT_1">
       <NameSurrogate>1</NameSurrogate>
       <Predicate>`col1` in (&apos;Y&apos;,&apos;N&apos;)</Predicate>
@@ -1565,42 +1642,70 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="602" parent="561" name="category_code">
+=======
+    <column id="578" parent="559" name="category_code">
+>>>>>>> main
       <AutoIncrement>13</AutoIncrement>
       <Comment>카테고리코드</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="603" parent="561" name="category_name">
+=======
+    <column id="579" parent="559" name="category_name">
+>>>>>>> main
       <Comment>카테고리명</Comment>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(30)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="604" parent="561" name="ref_category_code">
+=======
+    <column id="580" parent="559" name="ref_category_code">
+>>>>>>> main
       <Comment>상위카테고리코드</Comment>
       <Position>3</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <foreign-key id="605" parent="561" name="fk_ref_category_code">
+=======
+    <foreign-key id="581" parent="559" name="fk_ref_category_code">
+>>>>>>> main
       <ColNames>ref_category_code</ColNames>
       <RefColNames>category_code</RefColNames>
       <RefTableName>tbl_category</RefTableName>
     </foreign-key>
+<<<<<<< HEAD
     <index id="606" parent="561" name="PRIMARY">
+=======
+    <index id="582" parent="559" name="PRIMARY">
+>>>>>>> main
       <ColNames>category_code</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
+<<<<<<< HEAD
     <index id="607" parent="561" name="fk_ref_category_code">
       <ColNames>ref_category_code</ColNames>
       <Type>btree</Type>
     </index>
     <key id="608" parent="561" name="PRIMARY">
+=======
+    <index id="583" parent="559" name="fk_ref_category_code">
+      <ColNames>ref_category_code</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="584" parent="559" name="PRIMARY">
+>>>>>>> main
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
+<<<<<<< HEAD
     <column id="609" parent="562" name="country_code">
       <AutoIncrement>1</AutoIncrement>
       <NotNull>1</NotNull>
@@ -1638,41 +1743,65 @@
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="616" parent="563" name="menu_code">
+=======
+    <column id="585" parent="560" name="menu_code">
+>>>>>>> main
       <AutoIncrement>22</AutoIncrement>
       <Comment>메뉴코드</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="617" parent="563" name="menu_name">
+=======
+    <column id="586" parent="560" name="menu_name">
+>>>>>>> main
       <Comment>메뉴명</Comment>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(30)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="618" parent="563" name="menu_price">
+=======
+    <column id="587" parent="560" name="menu_price">
+>>>>>>> main
       <Comment>메뉴가격</Comment>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="619" parent="563" name="category_code">
+=======
+    <column id="588" parent="560" name="category_code">
+>>>>>>> main
       <Comment>카테고리코드</Comment>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="620" parent="563" name="orderable_status">
+=======
+    <column id="589" parent="560" name="orderable_status">
+>>>>>>> main
       <Comment>주문가능상태</Comment>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>char(1)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <foreign-key id="621" parent="563" name="fk_category_code">
+=======
+    <foreign-key id="590" parent="560" name="fk_category_code">
+>>>>>>> main
       <ColNames>category_code</ColNames>
       <RefColNames>category_code</RefColNames>
       <RefTableName>tbl_category</RefTableName>
     </foreign-key>
+<<<<<<< HEAD
     <index id="622" parent="563" name="PRIMARY">
       <ColNames>menu_code</ColNames>
       <Type>btree</Type>
@@ -1758,6 +1887,15 @@ menu_code</ColNames>
     </index>
     <index id="637" parent="565" name="fk_order_menu_menu_code">
       <ColNames>menu_code</ColNames>
+=======
+    <index id="591" parent="560" name="PRIMARY">
+      <ColNames>menu_code</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="592" parent="560" name="fk_category_code">
+      <ColNames>category_code</ColNames>
+>>>>>>> main
       <Type>btree</Type>
     </index>
     <key id="638" parent="565" name="PRIMARY">
@@ -1765,6 +1903,7 @@ menu_code</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
+<<<<<<< HEAD
     <column id="639" parent="566" name="payment_code">
       <AutoIncrement>1</AutoIncrement>
       <Comment>결제코드</Comment>
@@ -1807,22 +1946,76 @@ menu_code</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="646" parent="567" name="order_code">
+=======
+    <column id="594" parent="561" name="order_code">
+      <AutoIncrement>1</AutoIncrement>
+>>>>>>> main
       <Comment>주문코드</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="647" parent="567" name="payment_code">
       <Comment>결제코드</Comment>
+=======
+    <column id="595" parent="561" name="order_date">
+      <Comment>주문일자</Comment>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(8)|0s</StoredType>
+    </column>
+    <column id="596" parent="561" name="order_time">
+      <Comment>주문시간</Comment>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(8)|0s</StoredType>
+    </column>
+    <column id="597" parent="561" name="total_order_price">
+      <Comment>총주문금액</Comment>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>int(11)|0s</StoredType>
+    </column>
+    <index id="598" parent="561" name="PRIMARY">
+      <ColNames>order_code</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="599" parent="561" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="600" parent="562" name="order_code">
+      <Comment>주문코드</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int(11)|0s</StoredType>
+    </column>
+    <column id="601" parent="562" name="menu_code">
+      <Comment>메뉴코드</Comment>
+>>>>>>> main
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <foreign-key id="648" parent="567" name="fk_payment_order_order_code">
+=======
+    <column id="602" parent="562" name="order_amount">
+      <Comment>주문수량</Comment>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>int(11)|0s</StoredType>
+    </column>
+    <foreign-key id="603" parent="562" name="fk_order_menu_order_code">
+>>>>>>> main
       <ColNames>order_code</ColNames>
       <RefColNames>order_code</RefColNames>
       <RefTableName>tbl_order</RefTableName>
     </foreign-key>
+<<<<<<< HEAD
     <foreign-key id="649" parent="567" name="fk_payment_order_payment_code">
       <ColNames>order_code</ColNames>
       <RefColNames>payment_code</RefColNames>
@@ -1836,6 +2029,21 @@ order_code</ColNames>
     </index>
     <index id="651" parent="567" name="fk_payment_order_payment_code">
       <ColNames>order_code</ColNames>
+=======
+    <foreign-key id="604" parent="562" name="fk_order_menu_menu_code">
+      <ColNames>menu_code</ColNames>
+      <RefColNames>menu_code</RefColNames>
+      <RefTableName>tbl_menu</RefTableName>
+    </foreign-key>
+    <index id="605" parent="562" name="PRIMARY">
+      <ColNames>order_code
+menu_code</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="606" parent="562" name="fk_order_menu_menu_code">
+      <ColNames>menu_code</ColNames>
+>>>>>>> main
       <Type>btree</Type>
     </index>
     <key id="652" parent="567" name="PRIMARY">
@@ -1843,25 +2051,119 @@ order_code</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
+<<<<<<< HEAD
     <column id="653" parent="568" name="temp_code">
+=======
+    <column id="608" parent="563" name="payment_code">
+      <AutoIncrement>1</AutoIncrement>
+      <Comment>결제코드</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int(11)|0s</StoredType>
+    </column>
+    <column id="609" parent="563" name="payment_date">
+      <Comment>결제일</Comment>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>varchar(8)|0s</StoredType>
+    </column>
+    <column id="610" parent="563" name="payment_time">
+      <Comment>결제시간</Comment>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StoredType>varchar(8)|0s</StoredType>
+    </column>
+    <column id="611" parent="563" name="payment_price">
+      <Comment>결제금액</Comment>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StoredType>int(11)|0s</StoredType>
+    </column>
+    <column id="612" parent="563" name="payment_type">
+      <Comment>결제구분</Comment>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(6)|0s</StoredType>
+    </column>
+    <index id="613" parent="563" name="PRIMARY">
+      <ColNames>payment_code</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="614" parent="563" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="615" parent="564" name="order_code">
+      <Comment>주문코드</Comment>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StoredType>int(11)|0s</StoredType>
+    </column>
+    <column id="616" parent="564" name="payment_code">
+      <Comment>결제코드</Comment>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StoredType>int(11)|0s</StoredType>
+    </column>
+    <foreign-key id="617" parent="564" name="fk_payment_order_order_code">
+      <ColNames>order_code</ColNames>
+      <RefColNames>order_code</RefColNames>
+      <RefTableName>tbl_order</RefTableName>
+    </foreign-key>
+    <foreign-key id="618" parent="564" name="fk_payment_order_payment_code">
+      <ColNames>order_code</ColNames>
+      <RefColNames>payment_code</RefColNames>
+      <RefTableName>tbl_payment</RefTableName>
+    </foreign-key>
+    <index id="619" parent="564" name="PRIMARY">
+      <ColNames>payment_code
+order_code</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="620" parent="564" name="fk_payment_order_payment_code">
+      <ColNames>order_code</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="621" parent="564" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="622" parent="565" name="temp_code">
+>>>>>>> main
       <AutoIncrement>1</AutoIncrement>
       <Comment>임시코드</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>int(11)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <column id="654" parent="568" name="temp_email">
+=======
+    <column id="623" parent="565" name="temp_email">
+>>>>>>> main
       <Comment>이메일</Comment>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(30)|0s</StoredType>
     </column>
+<<<<<<< HEAD
     <index id="655" parent="568" name="PRIMARY">
+=======
+    <index id="624" parent="565" name="PRIMARY">
+>>>>>>> main
       <ColNames>temp_code</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
+<<<<<<< HEAD
     <key id="656" parent="568" name="PRIMARY">
+=======
+    <key id="625" parent="565" name="PRIMARY">
+>>>>>>> main
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

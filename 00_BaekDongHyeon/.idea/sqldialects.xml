@@ -15,8 +15,11 @@
     <file url="file://$PROJECT_DIR$/11_transaction.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/12_datatype.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/13_ddl.sql" dialect="MariaDB" />
+<<<<<<< HEAD
     <file url="file://$PROJECT_DIR$/14_constraints.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/15_build_in_function.sql" dialect="MariaDB" />
+=======
+>>>>>>> main
     <file url="file://$PROJECT_DIR$/실습과제/20251105_SET_OPERATORS까지.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/실습과제/SELECT_LIMIT_실습문제_정답.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/실습과제/SELECT~WHERE_실습문제.sql" dialect="MariaDB" />
