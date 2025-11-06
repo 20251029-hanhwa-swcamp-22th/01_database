@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2db303e-ec83-45fc-bdb0-89502c29420c" name="변경" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1252551a-05a3-4580-887b-5b884f887afd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1252551a-05a3-4580-887b-5b884f887afd.xml" afterDir="false" />
-=======
->>>>>>> main
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/20cb81fa-b1f3-48fd-96ce-df082a8dac57.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/20cb81fa-b1f3-48fd-96ce-df082a8dac57.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
