@@ -330,10 +330,7 @@ WHERE
     (orderable_status = 'N' OR menu_price < 10000)
     AND menu_name LIKE '%빵%' OR menu_name LIKE '%떡%' OR menu_name LIKE '%찜%';
 
-<<<<<<< HEAD
 
-=======
     orderable_status = 'N'
    OR
     menu_price < 10000 AND (menu_name LIKE '%빵' OR menu_name LIKE '%떡' OR menu_name LIKE '%찜');
->>>>>>> a6e017edc2de4db834c1842e830b78edf82085c6
