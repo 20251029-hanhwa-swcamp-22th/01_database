@@ -149,9 +149,6 @@ WHERE
     AND L.LOCAL_NAME IN ('ASIA1', 'ASIA2', 'ASIA3');
 
 
-
-
-
 -- 9. 각 부서별 평균 급여와 직원 수를 조회하시오. (NULL 급여는 제외)
 -- 평균 급여가 높은 순으로 정렬하시오. (6행)
 SELECT
