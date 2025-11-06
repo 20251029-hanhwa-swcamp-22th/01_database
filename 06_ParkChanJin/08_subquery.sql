@@ -249,4 +249,4 @@ WHERE `메뉴명` LIKE '%마늘%';
 
 
 
--- RESULT SET - SELECT 결과 집합
+
