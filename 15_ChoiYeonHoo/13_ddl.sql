@@ -20,7 +20,7 @@ CREATE TABLE tb1 (
         fk INT,
 
         col1 VARCHAR(255),
-        CHECK(col1 IN ('Y', 'N')) -- 테이블 레벨에서 제약조건 추가
+        CHECK(col1 IN ('Y', 'N')) -- 테이블 레벨에서 Constraints(제약 조건) 추가
     );
 
 SELECT *
