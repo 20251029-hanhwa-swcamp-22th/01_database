@@ -87,10 +87,31 @@ HINT 3
 +@ (심화)
 이메일의 도메인 주소가 모두 다르다고 가정할 때, @의 위치를 한 줄로 맞추고 싶은 경
 우에는 어떻게 수정할 수 있을까?
-
 */
-/*
 
+    SELECT
+        EMP_NAME,
+        LPAD(EMAIL,(SELECT
+                        MAX(CHAR_LENGTH(EMAIL))
+                    FROM
+                        employee),
+             ' ') AS EMAILFROM
+    FROM
+        employee;
+
+
+    SELECT
+        EMP_NAME,
+        CONCAT(LPAD(SUBSTRING_INDEX(EMAIL,'@',1),(
+            SELECT
+                MAX(CHAR_LENGTH(SUBSTRING_INDEX(EMAIL,'@',1)))
+            FROM
+                employee
+            ),''), '@', SUBSTRING_INDEX(EMAIL,'@',-1)) AS 'EMAIL'
+    FROM
+        employee;
+
+/*
 Q5.
 사내 행사 준비를 위해 직원 목록을 출력하려고 합니다. 직원 목록을 다음과 같이 출력하세
 요.
@@ -112,3 +133,17 @@ RPAD
 HINT 4
 SUBSTRING
 */
+
+SELECT
+    CONCAT(e.EMP_NAME,' ',j.JOB_NAME,'님') AS 'NAME_TAG',
+    CONCAT(n.NATIONAL_NAME,'지사',d.DEPT_TITLE,' 소속') AS 'BELONG',
+    em.EMP_NAME AS 'MANAGER_NAME'
+FROM
+    employee e
+JOIN    job j ON (e.JOB_CODE = j.JOB_CODE)
+JOIN    department d ON (e.DEPT_CODE = d.DEPT_ID)
+JOIN    location l ON (d.LOCATION_ID = l.LOCAL_CODE)
+JOIN    national n ON (l.NATIONAL_CODE = n.NATIONAL_CODE)
+LEFT JOIN    employee em ON e.MANAGER_ID = em.EMP_ID
+ORDER BY
+    MANAGER_NAME;
