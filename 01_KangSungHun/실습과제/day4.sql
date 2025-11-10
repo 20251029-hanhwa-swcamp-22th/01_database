@@ -90,6 +90,31 @@ VALUES
 단합을 위한 사내 체육대회를 위하여 팀을 꾸리는 중입니다. 기술지원부의 대리, 인사관리부
 의 사원, 영업부(팀명에 ‘영업’이 포함되면 영업부로 봄)의 부장을 한 팀으로 묶으려고 합니
 다. 이때, 이 팀의 팀원 수를 출력하세요.
+단, UNION과 SUBQUERY를 활용하여 출력하세요.
  */
+
+SELECT count(*) AS team
+FROM (
+    SELECT e.EMP_ID
+    FROM EMPLOYEE e
+    JOIN DEPARTMENT d ON e.DEPT_CODE = d.DEPT_ID
+    JOIN JOB j ON e.JOB_CODE = j.JOB_CODE
+WHERE d.DEPT_TITLE = '기술지원부'
+AND j.JOB_NAME = '대리'
+UNION
+    SELECT EMP_ID
+    FROM EMPLOYEE e
+             JOIN DEPARTMENT d ON e.DEPT_CODE = d.DEPT_ID
+             JOIN JOB j ON e.JOB_CODE = j.JOB_CODE
+    WHERE d.DEPT_TITLE = '인사관리부'
+      AND j.JOB_NAME = '사원'
+UNION
+    SELECT e.EMP_ID
+    FROM EMPLOYEE e
+             JOIN DEPARTMENT d ON e.DEPT_CODE = d.DEPT_ID
+             JOIN JOB j ON e.JOB_CODE = j.JOB_CODE
+    WHERE d.DEPT_TITLE LIKE '%영업%'
+      AND j.JOB_NAME = '부장') t;
+
 
 
