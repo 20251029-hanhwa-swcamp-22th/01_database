@@ -6,14 +6,14 @@
 
 CREATE TABLE students (
     student_id INT PRIMARY KEY,
-    name VARCHAR(255),
-    class VARCHAR(255)
+    name VARCHAR,
+    class VARCHAR
 );
 
 CREATE TABLE grades (
     grade_id INT PRIMARY KEY,
     student_id INT,
-    subject VARCHAR(255),
+    subject VARCHAR,
     grade CHAR(1),
     FOREIGN KEY (student_id) REFERENCES students(student_id)
 );
