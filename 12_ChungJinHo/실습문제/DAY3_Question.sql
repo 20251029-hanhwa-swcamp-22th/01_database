@@ -95,16 +95,14 @@ select e.EMP_ID 사원번호
       ,e.EMP_NAME 사원명
       ,e.SALARY 급여
       ,dln.DEPT_TITLE 부서명
-      ,dln.LOCAL_NAME 지역명
       ,dln.NATIONAL_NAME 국가명
       ,e.SALARY + s.MIN_SAL 위로금
 
   from employee e
-  left join
+  join
        (
            select d.DEPT_ID
                  ,d.DEPT_TITLE
-                 ,l.LOCAL_NAME
                  ,n.NATIONAL_NAME
              from department d
              join location l
