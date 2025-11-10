@@ -99,6 +99,11 @@ FROM (
             d.DEPT_TITLE,
             j.JOB_NAME,
             e.EMP_ID
+    COUNT('job')
+FROM (
+        SELECT
+            d.DEPT_TITLE,
+            j.JOB_NAME
         FROM
             employee e
         JOIN department d ON(e.DEPT_CODE = d.DEPT_ID)
@@ -111,6 +116,11 @@ FROM (
             d.DEPT_TITLE,
             j.JOB_NAME,
             e.EMP_ID
+        UNION ALL
+
+        SELECT
+            d.DEPT_TITLE,
+            j.JOB_NAME
         FROM
             employee e
                 JOIN department d ON(e.DEPT_CODE = d.DEPT_ID)
@@ -123,6 +133,7 @@ FROM (
             d.DEPT_TITLE,
             j.JOB_NAME,
         e.EMP_ID
+            j.JOB_NAME
         FROM
             employee e
                 JOIN department d ON(e.DEPT_CODE = d.DEPT_ID)

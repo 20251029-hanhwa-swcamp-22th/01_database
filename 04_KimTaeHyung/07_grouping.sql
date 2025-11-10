@@ -98,9 +98,7 @@ FROM
 GROUP BY
     category_code
 HAVING
-    SUM(menu_price) < 50000
-
-
+    SUM(menu_price) < 50000;
 
 
 /*

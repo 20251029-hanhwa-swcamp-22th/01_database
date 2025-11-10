@@ -11,6 +11,15 @@ LIMIT 1;
 -- HAVING SUM(SALARY) 는 그냥 조건없이 구문만 적어놓
 
 
+    d.DEPT_TITLE,
+    SUM(e.SALARY)
+FROM employee e
+JOIN department d ON (e.DEPT_CODE = d.DEPT_ID)
+GROUP BY d.DEPT_TITLE
+HAVING SUM(e.SALARY)
+ORDER BY SUM(e.SALARY) DESC
+LIMIT 1;
+
 /*
 SELECT
      d.DEPT_TITLE `부서명`,
