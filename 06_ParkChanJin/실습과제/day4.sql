@@ -93,6 +93,12 @@ Q3.
 단, UNION과 SUBQUERY를 활용하여 출력하세요.
 */
 SELECT
+    COUNT(job.EMP_ID)
+FROM (
+        SELECT
+            d.DEPT_TITLE,
+            j.JOB_NAME,
+            e.EMP_ID
     COUNT('job')
 FROM (
         SELECT
@@ -104,6 +110,12 @@ FROM (
         JOIN job j ON(e.JOB_CODE = j.JOB_CODE)
         WHERE d.DEPT_TITLE = '기술지원부' AND j.JOB_NAME = '대리'
 
+        UNION
+
+        SELECT
+            d.DEPT_TITLE,
+            j.JOB_NAME,
+            e.EMP_ID
         UNION ALL
 
         SELECT
@@ -119,6 +131,8 @@ FROM (
 
         SELECT
             d.DEPT_TITLE,
+            j.JOB_NAME,
+        e.EMP_ID
             j.JOB_NAME
         FROM
             employee e
