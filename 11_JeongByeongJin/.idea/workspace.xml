@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69c91fcb-beb9-4dae-8559-1b6007bab341" name="Changes" comment="" />
+    <list default="true" id="69c91fcb-beb9-4dae-8559-1b6007bab341" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/실습과제/20251107_day5_실습과제.sql" beforeDir="false" afterPath="$PROJECT_DIR$/실습과제/20251107_day5_실습과제.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/실습과제/20251110_day6_viewtrigger.sql" beforeDir="false" afterPath="$PROJECT_DIR$/실습과제/20251110_day6_viewtrigger.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
