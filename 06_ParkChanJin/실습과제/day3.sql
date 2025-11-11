@@ -1,5 +1,16 @@
 /*  Q1.부서별 직원 급여의 총합 중 가장 큰 액수를 출력하세요.  */
 SELECT
+    DEPT_TITLE,
+    SUM(SALARY)
+FROM employee e
+JOIN department d ON (DEPT_CODE = DEPT_ID)
+GROUP BY d.DEPT_TITLE
+ORDER BY SUM(e.SALARY) DESC
+LIMIT 1;
+
+-- HAVING SUM(SALARY) 는 그냥 조건없이 구문만 적어놓
+
+
     d.DEPT_TITLE,
     SUM(e.SALARY)
 FROM employee e
