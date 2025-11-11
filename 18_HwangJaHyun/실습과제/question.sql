@@ -26,7 +26,14 @@ SELECT
     employee.SALARY
 FROM
     employee
-WHERE employee.DEPT_CODE IN((SELECT DEPT_ID FROM department WHERE DEPT_TITLE LIKE '%영업%'));
+WHERE employee.DEPT_CODE IN(
+    (
+        SELECT DEPT_ID
+        FROM department
+        WHERE DEPT_TITLE
+        LIKE '%영업%'
+    )
+);
 
 
 /*
@@ -42,7 +49,11 @@ FROM
 JOIN
     department D ON (E.DEPT_CODE = D.DEPT_ID)
 WHERE
-    E.DEPT_CODE IN((SELECT DEPT_ID FROM department WHERE DEPT_TITLE LIKE '%영업%'));
+    E.DEPT_CODE IN(
+        (SELECT DEPT_ID
+         FROM department
+         WHERE DEPT_TITLE
+         LIKE '%영업%'));
 
 /*
     Q4.
@@ -267,7 +278,8 @@ SELECT
             '-',
             SUBSTRING(e.PHONE,1,3),
             SUBSTRING(e.PHONE,4,4),
-            SUBSTRING(e.PHONE,8,4)) AS PHONE
+            SUBSTRING(e.PHONE,8,4)
+    ) AS PHONE
 FROM
     employee e
 WHERE
@@ -287,7 +299,11 @@ HING 4 YEAR, MONTH, DAY
 */
 SELECT
     e.emp_name AS 직원명,
-    CONCAT(YEAR(e.HIRE_DATE),'년 ',MONTH(e.HIRE_DATE),'월 ',DAY(e.HIRE_DATE),'일') AS 입사일,
+    CONCAT(
+            YEAR(e.HIRE_DATE),'년 ',
+            MONTH(e.HIRE_DATE),'월 ',
+            DAY(e.HIRE_DATE),'일'
+    ) AS 입사일,
     FORMAT(e.SALARY, 0) AS '급여'
 FROM
     employee e
@@ -331,10 +347,10 @@ SELECT
     e.EMP_NAME,
     FORMAT(e.SALARY,0) AS SALARY,
     CONCAT(CAST(e.BONUS * 100 AS SIGNED INTEGER),'%') AS BONUS,
-    FORMAT(e.SALARY * (1 + nvl(e.BONUS,0)),0) AS TOTAL_SALARY
+    FORMAT(e.SALARY * (1 + nvl(e.BONUS,1)),0) AS TOTAL_SALARY
 FROM
     employee e
-ORDER BY e.SALARY * (1 + nvl(e.BONUS,0)) DESC;
+ORDER BY e.SALARY * (1 + nvl(e.BONUS,1)) DESC;
 
 
 
@@ -361,10 +377,27 @@ FROM
  */
 SELECT
     E.EMP_NAME,
-    LPAD(E.EMAIL,(SELECT CHAR_LENGTH(MAX(EMAIL)) FROM employee), ' ') AS 'EMAIL'
+    CONCAT_WS('@',
+            LPAD(SUBSTRING_INDEX(E.EMAIL, '@', 1),
+                 (SELECT MAX(
+                        CHAR_LENGTH(
+                            SUBSTRING_INDEX(S.EMAIL, '@', 1)
+                        )
+                 ) FROM employee S), ' '
+            ),SUBSTRING_INDEX(E.EMAIL, '@', -1)
+    ) AS 'EMAIL'
 FROM
     employee E;
 
+SELECT
+    E.EMP_NAME,
+    CONCAT_WS('@',
+            LPAD(SUBSTRING_INDEX(E.EMAIL, '@', 1),
+                 (SELECT MAX(INSTR(S.EMAIL,'@') - 1 ) FROM employee S), ' '
+            ),SUBSTRING_INDEX(E.EMAIL, '@', -1)
+    ) AS 'EMAIL'
+FROM
+    employee E;
 /*
 Q5.
 
@@ -385,11 +418,17 @@ HINT 2 - CONCAT
 HINT 3 - RPAD
 HINT 4 - SUBSTRING
  */
+/*
+ 1. 스칼라 서브쿼리
+*/
 SELECT
     CONCAT(E.EMP_NAME,' ',J.JOB_NAME,'님') AS NAME_TAG,
     RPAD(SUBSTRING(E.EMP_NO,1,7),13,'*') AS EMP_NO,
     CONCAT(N.NATIONAL_NAME,'지사 ',D.DEPT_TITLE,' 소속') AS BELONG,
-    (SELECT EMP_NAME FROM employee WHERE EMP_NO = E.MANAGER_ID) AS MANAGER_NAME
+    (SELECT S.EMP_NAME
+     FROM employee S
+     WHERE S.EMP_ID = E.MANAGER_ID
+    ) AS MANAGER_NAME
 FROM
     employee E
 JOIN job J ON(E.JOB_CODE = J.JOB_CODE)
@@ -397,25 +436,23 @@ JOIN department D ON(E.DEPT_CODE = D.DEPT_ID)
 JOIN location L ON(D.LOCATION_ID = L.LOCAL_CODE)
 JOIN national N ON(L.NATIONAL_CODE = N.NATIONAL_CODE);
 
-SELECT EMP_NAME FROM employee WHERE EMP_NO = MANAGER_ID
+/*
+    2. inner join
+*/
+SELECT * FROM employee E
+INNER JOIN employee S ON (S.EMP_ID = E.MANAGER_ID);
 
 
 SELECT
     CONCAT(E.EMP_NAME,' ',J.JOB_NAME,'님') AS NAME_TAG,
     RPAD(SUBSTRING(E.EMP_NO,1,7),13,'*') AS EMP_NO,
-    CONCAT(N.NATIONAL_NAME,'지사 ',D.DEPT_TITLE,' 소속') AS BELONG
-
+    CONCAT(N.NATIONAL_NAME,'지사 ',D.DEPT_TITLE,' 소속') AS BELONG,
+    S.EMP_NAME
 FROM
     employee E
-LEFT JOIN employee M ON(E.MANAGER_ID = M.EMP_NO)
 JOIN job J ON(E.JOB_CODE = J.JOB_CODE)
 JOIN department D ON(E.DEPT_CODE = D.DEPT_ID)
 JOIN location L ON(D.LOCATION_ID = L.LOCAL_CODE)
-JOIN national N ON(L.NATIONAL_CODE = N.NATIONAL_CODE);
+JOIN national N ON(L.NATIONAL_CODE = N.NATIONAL_CODE)
+INNER JOIN employee S ON (S.EMP_ID = E.MANAGER_ID);
 
-SELECT *
-FROM
-    employee E
-LEFT JOIN employee M ON(E.MANAGER_ID = M.EMP_NO)
-
--- 푸는 중.............
