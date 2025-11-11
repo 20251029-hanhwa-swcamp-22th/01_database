@@ -96,20 +96,9 @@ BEGIN
 
     WHILE i <= 100000
         DO
-            -- 나이: 18~25 랜덤
-            SET random_age = 18 + FLOOR(RAND() * 8);
 
-            -- 학점: A, B, C, D, F 중 랜덤
-            SET random_grade = ELT(FLOOR(1 + RAND() * 5), 'A', 'B', 'C', 'D', 'F');
-
-            INSERT INTO students (id, name, age, grade)
-            VALUES (i,
-                    CONCAT('학생', LPAD(i, 5, '0')), -- 학생00001, 학생00002, ...
-                    random_age,
-                    random_grade);
-
-            SET i = i + 1;
-        END WHILE;
+        SET i = i + 1;
+    END WHILE;
 END$$
 
 DELIMITER ;
