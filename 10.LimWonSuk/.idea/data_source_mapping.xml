@@ -20,6 +20,7 @@
     <file url="file://$PROJECT_DIR$/17_index.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
     <file url="file://$PROJECT_DIR$/18_procedure.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
     <file url="file://$PROJECT_DIR$/19_trigger.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/20_db_modeling_sql.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
     <file url="file://$PROJECT_DIR$/9_set_operators.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
     <file url="file://$PROJECT_DIR$/db_script.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
     <file url="file://$PROJECT_DIR$/실습관제/20251105_SET_OPERATORS까지.sql" value="a70dd4b3-c809-4e2c-b092-8fbbdf8f0077" />
@@ -30,5 +31,12 @@
     <file url="file://$PROJECT_DIR$/실습관제/day5_question.sql" value="a70dd4b3-c809-4e2c-b092-8fbbdf8f0077" />
     <file url="file://$PROJECT_DIR$/실습관제/day6_viewtrigger.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
     <file url="file://$PROJECT_DIR$/실습관제/employee.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/notidications_test_lws.sql" value="0c9a200c-9987-4476-b506-1e704404e33c" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/notifications_trigger_lws.sql" value="0c9a200c-9987-4476-b506-1e704404e33c" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/purchaseTest_phy_direct.sql" value="0c9a200c-9987-4476-b506-1e704404e33c" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/report_test_lws.sql" value="0c9a200c-9987-4476-b506-1e704404e33c" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/report_trigger_lws.sql" value="0c9a200c-9987-4476-b506-1e704404e33c" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/sinefive_real_final_lws.sql" value="0c9a200c-9987-4476-b506-1e704404e33c" />
+    <file url="file://$USER_HOME$/Documents/be22-1st-team4-project/createtable.sql" value="0c9a200c-9987-4476-b506-1e704404e33c" />
   </component>
 </project>
