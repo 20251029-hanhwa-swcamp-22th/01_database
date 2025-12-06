@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/00_계정생성.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/01_select.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/02_orderby.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/03_where.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/04_distinct.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/05_limit.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/06_join.sql" value="a70dd4b3-c809-4e2c-b092-8fbbdf8f0077" />
+    <file url="file://$PROJECT_DIR$/07_grouping.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/08_subquery.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/10_dml.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/11_transaction.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/12_datatype.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/13_ddl.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/14_constraints.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/15_build_in_functions.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/16_view.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/17_index.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/18_procedure.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/19_trigger.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/20_db_modeling_sql.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/9_set_operators.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/db_script.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/실습관제/20251105_SET_OPERATORS까지.sql" value="a70dd4b3-c809-4e2c-b092-8fbbdf8f0077" />
+    <file url="file://$PROJECT_DIR$/실습관제/SELECT_LIMIT_실습문제.sql" value="a70dd4b3-c809-4e2c-b092-8fbbdf8f0077" />
+    <file url="file://$PROJECT_DIR$/실습관제/SELECT~WHERE_실습문제.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/실습관제/day3_question.sql" value="a70dd4b3-c809-4e2c-b092-8fbbdf8f0077" />
+    <file url="file://$PROJECT_DIR$/실습관제/day4_question.sql" value="a70dd4b3-c809-4e2c-b092-8fbbdf8f0077" />
+    <file url="file://$PROJECT_DIR$/실습관제/day5_question.sql" value="a70dd4b3-c809-4e2c-b092-8fbbdf8f0077" />
+    <file url="file://$PROJECT_DIR$/실습관제/day6_viewtrigger.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$PROJECT_DIR$/실습관제/employee.sql" value="35486c33-5714-4c82-a1d4-cc7c9057cd09" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/notidications_test_lws.sql" value="eea7b0cb-00e0-4117-b7fe-a424070d10b7" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/notifications_trigger_lws.sql" value="eea7b0cb-00e0-4117-b7fe-a424070d10b7" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/procedure,view,trigger_cyh.sql" value="eea7b0cb-00e0-4117-b7fe-a424070d10b7" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/purchaseTest_phy_direct.sql" value="0c9a200c-9987-4476-b506-1e704404e33c" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/report_test_lws.sql" value="eea7b0cb-00e0-4117-b7fe-a424070d10b7" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/report_trigger_lws.sql" value="eea7b0cb-00e0-4117-b7fe-a424070d10b7" />
+    <file url="file://$USER_HOME$/Desktop/아알ㄹㅇㅇ말날/실습/시네파이브/test/sinefive_real_final_lws.sql" value="eea7b0cb-00e0-4117-b7fe-a424070d10b7" />
+  </component>
+</project>
